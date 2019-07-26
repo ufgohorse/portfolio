@@ -1,19 +1,19 @@
-.initialBody{ /*configuração inicial do body, na hr do loading*/
+/* Estilos da tela de loading */
+.initialBody{ /*configuração inicial do body*/
+    position: fixed;
     background-color: rgba(0, 0, 0, .87);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 20%;
     color: aliceblue;
-}
-.conteudo{
-    display: none;
+    height: 100%;
+    width: 100%;
+    z-index: 9999;
 }
 
 .loading{
     position: relative;
-    display: block;
+    top: 50%;
+    left: 50%;
 }
+
 .pacman{
     position: relative;
     width: 0;
@@ -82,3 +82,5 @@
         transform: translateX(-93.75px);
       }
 }
+
+/**************************/
